@@ -42,7 +42,7 @@ function toggleGrayscale() {
   const iHK9 = document.getElementById('iHK9');
   let iHK9h = iHK9.href;
   const isOn = body.classList.toggle('grayscale-mode');
-  let first,last = 0;
+  let first,last;
   if (isOn) {
     logo.src = './img/logo-m.png';
     first= gh.indexOf("/colorscale");

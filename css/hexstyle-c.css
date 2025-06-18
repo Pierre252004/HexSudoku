@@ -33,7 +33,7 @@ body {
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 0;
 }
 
 .nav-center > .dropdown {
@@ -110,7 +110,7 @@ body {
 .switch {
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 0;
   flex-direction: row;
 }
 

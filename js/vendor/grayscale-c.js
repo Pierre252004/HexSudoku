@@ -1,7 +1,7 @@
 function toggleGrayscale() {
   const page = window.location.href;
-  let newhref='';
-  let first, last=0;
+  let newhref;
+  let first, last;
   if (page.indexOf("/grayscale/")==-1) {
     first= page.indexOf("/colorscale/");
     last = first+12;
