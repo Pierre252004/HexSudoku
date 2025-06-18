@@ -1,19 +1,95 @@
-const fs = require('fs');
-const data = fs.readFileSync('mood.txt', 'utf8');
-console.log(data);
-
 function toggleGrayscale() {
   const body = document.body;
   const logo = document.getElementById('logo');
-
-  body.classList.toggle('grayscale-mode');
-  if (body.classList.contains('grayscale-mode')) {
+  const g = document.getElementById('g');
+  let gh = g.href;
+  const g1 = document.getElementById('g1');
+  let g1h = g1.href;
+  const gHC = document.getElementById('gHC');
+  let gHCh = gHC.href;
+  const gHC4 = document.getElementById('gHC4');
+  let gHC4h = gHC4.href;
+  const gHC6 = document.getElementById('gHC6');
+  let gHC6h = gHC6.href;
+  const gHC9 = document.getElementById('gHC9');
+  let gHC9h = gHC9.href;
+  const gHK = document.getElementById('gHK');
+  let gHKh = gHK.href;
+  const gHK4 = document.getElementById('gHK4');
+  let gHK4h = gHK4.href;
+  const gHK6 = document.getElementById('gHK6');
+  let gHK6h = gHK6.href;
+  const gHK9 = document.getElementById('gHK9');
+  let gHK9h = gHK9.href;
+  const i = document.getElementById('i');
+  let ih = i.href;
+  const i1 = document.getElementById('i1');
+  let i1h = i1.href;
+  const iHC = document.getElementById('iHC');
+  let iHCh = iHC.href;
+  const iHC4 = document.getElementById('iHC4');
+  let iHC4h = iHC4.href;
+  const iHC6 = document.getElementById('iHC6');
+  let iHC6h = iHC6.href;
+  const iHC9 = document.getElementById('iHC9');
+  let iHC9h = iHC9.href;
+  const iHK = document.getElementById('iHK');
+  let iHKh = iHK.href;
+  const iHK4 = document.getElementById('iHK4');
+  let iHK4h = iHK4.href;
+  const iHK6 = document.getElementById('iHK6');
+  let iHK6h = iHK6.href;
+  const iHK9 = document.getElementById('iHK9');
+  let iHK9h = iHK9.href;
+  const isOn = body.classList.toggle('grayscale-mode');
+  let first,last = 0;
+  if (isOn) {
     logo.src = './img/logo-m.png';
-    fs.writeFileSync('mood.txt', 'OFF');
-    console.log('OFF');
+    first= gh.indexOf("/colorscale");
+    last = first+11;
+    g.href = gh.slice(0,first)+'/grayscale'+ gh.slice(last,gh.length);
+    g1.href = g1h.slice(0,first)+'/grayscale'+ g1h.slice(last,g1h.length);
+    gHC.href = gHCh.slice(0,first)+'/grayscale'+ gHCh.slice(last,gHCh.length);
+    gHC4.href = gHC4h.slice(0,first)+'/grayscale'+ gHC4h.slice(last,gHC4h.length);
+    gHC6.href = gHC6h.slice(0,first)+'/grayscale'+ gHC6h.slice(last,gHC6h.length);
+    gHC9.href = gHC9h.slice(0,first)+'/grayscale'+ gHC9h.slice(last,gHC9h.length);
+    gHK.href = gHKh.slice(0,first)+'/grayscale'+ gHKh.slice(last,gHKh.length);
+    gHK4.href = gHK4h.slice(0,first)+'/grayscale'+ gHK4h.slice(last,gHK4h.length);
+    gHK6.href = gHK6h.slice(0,first)+'/grayscale'+ gHK6h.slice(last,gHK6h.length);
+    gHK9.href = gHK9h.slice(0,first)+'/grayscale'+ gHK9h.slice(last,gHK9h.length);
+    i.href = ih.slice(0,first)+'/grayscale'+ ih.slice(last,ih.length);
+    i1.href = i1h.slice(0,first)+'/grayscale'+ i1h.slice(last,i1h.length);
+    iHC.href = iHCh.slice(0,first)+'/grayscale'+ iHCh.slice(last,iHCh.href.length);
+    iHC4.href = iHC4h.slice(0,first)+'/grayscale'+ iHC4h.slice(last,iHC4h.href.length);
+    iHC6.href = iHC6h.slice(0,first)+'/grayscale'+ iHC6h.slice(last,iHC6h.href.length);
+    iHC9.href = iHC9h.slice(0,first)+'/grayscale'+ iHC9h.slice(last,iHC9h.href.length);
+    iHK.href = iHKh.slice(0,first)+'/grayscale'+ iHKh.slice(last,iHKh.href.length);
+    iHK4.href = iHK4h.slice(0,first)+'/grayscale'+ iHK4h.slice(last,iHK4h.href.length);
+    iHK6.href = iHK6h.slice(0,first)+'/grayscale'+ iHK6h.slice(last,iHK6h.href.length);
+    iHK9.href = iHK9h.slice(0,first)+'/grayscale'+ iHK9h.slice(last,iHK9h.href.length);
   } else {
     logo.src = './img/logo.png';
-    fs.writeFileSync('mood.txt', 'ON');
+    first= page.indexOf("/grayscale");
+    last = first+10;
+    g.href = gh.slice(0,first)+'/colorscale'+ gh.slice(last,gh.length);
+    g1.href = g1h.slice(0,first)+'/colorscale'+ g1h.slice(last,g1h.length);
+    gHC.href = gHCh.slice(0,first)+'/colorscale'+ gHCh.slice(last,gHCh.length);
+    gHC4.href = gHC4h.slice(0,first)+'/colorscale'+ gHC4h.slice(last,gHC4h.length);
+    gHC6.href = gHC6h.slice(0,first)+'/colorscale'+ gHC6h.slice(last,gHC6h.length);
+    gHC9.href = gHC9h.slice(0,first)+'/colorscale'+ gHC9h.slice(last,gHC9h.length);
+    gHK.href = gHKh.slice(0,first)+'/colorscale'+ gHKh.slice(last,gHKh.length);
+    gHK4.href = gHK4h.slice(0,first)+'/colorscale'+ gHK4h.slice(last,gHK4h.length);
+    gHK6.href = gHK6h.slice(0,first)+'/colorscale'+ gHK6h.slice(last,gHK6h.length);
+    gHK9.href = gHK9h.slice(0,first)+'/colorscale'+ gHK9h.slice(last,gHK9h.length);
+    i.href = ih.slice(0,first)+'/colorscale'+ ih.slice(last,ih.length);
+    i1.href = i1h.slice(0,first)+'/colorscale'+ i1h.slice(last,i1h.length);
+    iHC.href = iHCh.slice(0,first)+'/colorscale'+ iHCh.slice(last,iHCh.length);
+    iHC4.href = iHC4h.slice(0,first)+'/colorscale'+ iHC4h.slice(last,iHC4h.length);
+    iHC6.href = iHC6h.slice(0,first)+'/colorscale'+ iHC6h.slice(last,iHC6h.length);
+    iHC9.href = iHC9h.slice(0,first)+'/colorscale'+ iHC9h.slice(last,iHC9h.length);
+    iHK.href = iHKh.slice(0,first)+'/colorscale'+ iHKh.slice(last,iHKh.length);
+    iHK4.href = iHK4h.slice(0,first)+'/colorscale'+ iHK4h.slice(last,iHK4h.length);
+    iHK6.href = iHK6h.slice(0,first)+'/colorscale'+ iHK6h.slice(last,iHK6h.length);
+    iHK9.href = iHK9h.slice(0,first)+'/colorscale'+ iHK9h.slice(last,iHK9h.length);
   }
-
 }

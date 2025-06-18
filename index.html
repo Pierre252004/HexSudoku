@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Hex Sudoku Home</title>
+  <link rel="icon" type="image/png" href="./img/icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/hexstyle.css">
 </head>
@@ -18,22 +19,22 @@
   <div class="nav-center">
     <!-- Start Dropdown -->
     <div class="dropdown">
-      <a href="index_m.html">Start ▾</a>
+      <a id="g" href="./colorscale/game.html">Start ▾</a>
       <div class="dropdown-content">
         <div class="nested-dropdown">
-          <a href="#">Hex Sudoku ▸</a>
+          <a id="gHC" href="./colorscale/game/hex-classic.html">Hex Sudoku ▸</a>
           <div class="nested-dropdown-content">
-            <a href="hex-4x4.html">4x4 Grid</a>
-            <a href="hex-6x6.html">6x6 Grid</a>
-            <a href="hex-9x9.html">9x9 Grid</a>
+            <a id="gHC4" href="./colorscale/game/hex-classic/4x4.html">4x4 Grid</a>
+            <a id="gHC6" href="./colorscale/game/hex-classic/6x6.html">6x6 Grid</a>
+            <a id="gHC9" href="./colorscale/game/hex-classic/9x9.html">9x9 Grid</a>
           </div>
         </div>
         <div class="nested-dropdown">
-          <a href="#">Hex Sudoku Killer ▸</a>
+          <a id="gHK" href="./colorscale/game/hex-killer.html">Hex Sudoku Killer ▸</a>
           <div class="nested-dropdown-content">
-            <a href="killer-4x4.html">4x4 Grid</a>
-            <a href="killer-6x6.html">6x6 Grid</a>
-            <a href="killer-9x9.html">9x9 Grid</a>
+            <a id="gHK4" href="./colorscale/game/hex-killer/4x4.html">4x4 Grid</a>
+            <a id="gHK6" href="./colorscale/game/hex-killer/6x6.html">6x6 Grid</a>
+            <a id="gHK9" href="./colorscale/game/hex-killer/9x9.html">9x9 Grid</a>
           </div>
         </div>
       </div>
@@ -41,22 +42,22 @@
 
     <!-- Instructions Dropdown -->
     <div class="dropdown">
-      <a href="#">Instructions ▾</a>
+      <a id="i" href="./colorscale/instruction.html">Instructions ▾</a>
       <div class="dropdown-content">
         <div class="nested-dropdown">
-          <a href="#">Hex Sudoku ▸</a>
+          <a id="iHC" href="./colorscale/instruction/hex-classic.html">Hex Sudoku ▸</a>
           <div class="nested-dropdown-content">
-            <a href="instructions-hex-4x4.html">4x4 Grid</a>
-            <a href="instructions-hex-6x6.html">6x6 Grid</a>
-            <a href="instructions-hex-9x9.html">9x9 Grid</a>
+            <a id="iHC4" href="./colorscale/instruction/hex-classic/4x4.html">4x4 Grid</a>
+            <a id="iHC6" href="./colorscale/instruction/hex-classic/6x6.html">6x6 Grid</a>
+            <a id="iHC9" href="./colorscale/instruction/hex-classic/9x9.html">9x9 Grid</a>
           </div>
         </div>
         <div class="nested-dropdown">
-          <a href="#">Hex Sudoku Killer ▸</a>
+          <a id="iHK" href="./colorscale/instruction/hex-killer.html">Hex Sudoku Killer ▸</a>
           <div class="nested-dropdown-content">
-            <a href="instructions-killer-4x4.html">4x4 Grid</a>
-            <a href="instructions-killer-6x6.html">6x6 Grid</a>
-            <a href="instructions-killer-9x9.html">9x9 Grid</a>
+            <a id="iHK4" href="./colorscale/instruction/hex-killer/4x4.html">4x4 Grid</a>
+            <a id="iHK6" href="./colorscale/instruction/hex-killer/6x6.html">6x6 Grid</a>
+            <a id="iHK9" href="./colorscale/instruction/hex-killer/9x9.html">9x9 Grid</a>
           </div>
         </div>
       </div>
@@ -77,8 +78,8 @@
 <!-- MAIN CONTENT -->
 <div class="container">
   <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='hex-9x9.html'">Start Game</button>
-  <button class="btn" onclick="location.href='instructions-hex-9x9.html'">Instructions</button>
+  <button class="btn" id="g1" onclick="location.href='./colorscale/game.html'">Start Game</button>
+  <button class="btn" id="i1" onclick="location.href='./colorscale/instruction.html'">Instructions</button>
 </div>
 
 <!-- JS to toggle grayscale -->

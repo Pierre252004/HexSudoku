@@ -1,13 +1,14 @@
-/* ========== BASE STYLES ========== */
+/* ========== GRAYSCALE MODE STYLES ========== */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #f0f5f9;
+  background-color: #3d3d3;
+  color: #333333;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navbar {
-  background-color: #303030;
+  background-color: #808080;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +43,7 @@ body {
 
 .nav-center a,
 .dropdown > a {
-  color: white;
+  color: #333333;
   text-decoration: none;
   padding: 12px 16px;
   display: inline-block;
@@ -57,7 +58,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #303030ff;
+  background-color: #878787;
   min-width: 200px;
   top: 100%;
   left: 0;
@@ -65,7 +66,7 @@ body {
 }
 
 .dropdown-content a {
-  color: white;
+  color: #333333;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -86,7 +87,7 @@ body {
 .nested-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #444;
+  background-color: #909090;
   top: 0;
   left: 100%;
   margin-left: 2px;
@@ -103,7 +104,7 @@ body {
   align-items: center;
   gap: 10px;
   margin-left: auto;
-  color: white;
+  color: #cccccc;
   transition: flex-direction 0.3s ease;
 }
 
@@ -125,27 +126,28 @@ body {
   display: inline-block;
   width: 60px;
   height: 24px;
-  background-color: palevioletred;
+  background-color: #505450;
   transition: 0.3s;
   border-radius: 24px;
 }
 .slider::after {
-  content: "OFF";
+  content: "ON";
   position: absolute;
-  right: 6px;
+  right: auto;
+  left: 6px;
   top: 0;
   bottom: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   pointer-events: none;
 }
 
 input:checked + .slider::after {
-  content: "ON";
-  justify-content: flex-start;
-  left: 6px;
-  right: auto;
+  content: "OFF";
+  justify-content: flex-end;
+  left: auto;
+  right: 6px;
 }
 
 .slider:before {
@@ -153,20 +155,20 @@ input:checked + .slider::after {
   content: "";
   height: 18px;
   width: 18px;
-  left: 3px;
+  right: 3px;
   bottom: 3px;
-  background-color: red;
+  background-color: black;
   transition: 0.3s;
   border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #505450;
+  background-color: palevioletred;
 }
 
 input:checked + .slider:before {
-  transform: translateX(36px);
-  background-color: black;
+  transform: translateX(-36px);
+  background-color: red;
 }
 
 .container {
@@ -180,13 +182,13 @@ h1 {
   transition: color 0.3s ease;
 }
 .h1{
-  color: #bbbbbb;
+  color: #444444;
 }
 .btn {
   margin: 20px;
   padding: 14px 30px;
   font-size: 18px;
-  background-color: #007BFF;
+  background-color: #888899;
   color: white;
   border: none;
   border-radius: 8px;
@@ -195,43 +197,5 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #0056b3;
-}
-
-
-/* ========== GRAYSCALE MODE STYLES ========== */
-body.grayscale-mode {
-  background-color: #3d3d3;
-  color: #333333;
-}
-
-body.grayscale-mode .navbar {
-  background-color: #808080;
-}
-
-body.grayscale-mode .nav-center a,
-body.grayscale-mode .dropdown > a{
-  color: #333333;
-}
-body.grayscale-mode .theme-switch {
-  color: #cccccc;
-}
-body.grayscale-mode .nested-dropdown-content{
-  background-color: #909090;
-}
-body.grayscale-mode .dropdown-content{
-  background-color: #878787;
-}
-
-body.grayscale-mode h1,
-body.grayscale-mode .h1 {
-  color: #444444;
-}
-
-body.grayscale-mode .btn {
-  background-color: #888899;
-}
-
-body.grayscale-mode .btn:hover {
   background-color: #777788;
 }
