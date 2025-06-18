@@ -2,7 +2,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background-color: #3d3d3d;
+  background-color: #c2c2c2;
   color: #333333;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
