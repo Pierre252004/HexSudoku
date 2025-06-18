@@ -1,9 +1,19 @@
+const fs = require('fs');
+const data = fs.readFileSync('mood.txt', 'utf8');
+console.log(data);
+
 function toggleGrayscale() {
   const body = document.body;
   const logo = document.getElementById('logo');
 
   body.classList.toggle('grayscale-mode');
-  logo.src = body.classList.contains('grayscale-mode') ? './img/logo-m.png' : './img/logo.png';
-  window.location.href = "./index_m.html"; // ⬅️ Change to your desired page
+  if (body.classList.contains('grayscale-mode')) {
+    logo.src = './img/logo-m.png';
+    fs.writeFileSync('mood.txt', 'OFF');
+    console.log('OFF');
+  } else {
+    logo.src = './img/logo.png';
+    fs.writeFileSync('mood.txt', 'ON');
+  }
 
 }

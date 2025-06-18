@@ -174,12 +174,14 @@ input:checked + .slider:before {
   padding: 80px 20px;
 }
 
-.h1 {
+h1 {
   font-size: 36px;
   color: #bbbbbb;
   transition: color 0.3s ease;
 }
-
+.h1{
+  color: #bbbbbb;
+}
 .btn {
   margin: 20px;
   padding: 14px 30px;
@@ -221,6 +223,7 @@ body.grayscale-mode .dropdown-content{
   background-color: #878787;
 }
 
+body.grayscale-mode h1,
 body.grayscale-mode .h1 {
   color: #444444;
 }
