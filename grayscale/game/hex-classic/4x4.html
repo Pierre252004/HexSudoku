@@ -18,14 +18,13 @@
 
   <div class="nav-center">
     <!-- Start Dropdown -->
-    <a href="../../../index.html">Home</a>
+    <a href="../../../index-m.html">Home</a>
     <div class="dropdown">
       <a href="../../game.html">Start ▾</a>
       <div class="dropdown-content">
         <div class="nested-dropdown">
           <a href="../hex-classic.html">Hex Sudoku ▸</a>
           <div class="nested-dropdown-content">
-            <a href="./4x4.html">4x4 Grid</a>
             <a href="./6x6.html">6x6 Grid</a>
             <a href="./9x9.html">9x9 Grid</a>
           </div>
@@ -77,13 +76,61 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='hex-9x9.html'">Start Game</button>
-  <button class="btn" onclick="location.href='instructions-hex-9x9.html'">Instructions</button>
+<div class="sudoku-wrapper">
+  <div class="sudoku-grid grid4">
+    <!-- 4 rows x 4 columns = 16 cells -->
+    <div class="sudoku-group group4 sudoku-groupTL">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>1</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>2</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>3</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>4</div> </div>
+    </div>
+
+    <div class="sudoku-group group4 sudoku-groupTR">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>5</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>6</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>7</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>8</div> </div>
+    </div>
+
+    <div class="sudoku-group group4 sudoku-groupBL">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>9</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>10</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>11</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>12</div> </div>
+    </div>
+
+    <div class="sudoku-group group4 sudoku-groupBR">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>31</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>32</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>33</div> </div>
+      <div class="#"> <div class="sudoku-cell s4" contenteditable>34</div> </div>
+    </div>
+
+  </div>
+</div>
+<div class="game-header">
+  <div class="timer" id="timer">⏱ Time: Unlimited</div>
+  <div class="number-bank">
+    <div class="bank-number b4 white" draggable="true">#FFFFFF</div>
+    <div class="bank-number b4 grayB" draggable="true">#BFBFBF</div>
+    <div class="bank-number b4 gray4" draggable="true">#404040</div>
+    <div class="bank-number b4 black" draggable="true">#000000</div>
+  </div>
+</div>
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span id="popup-message">You Win!</span>
+    <button onclick="closePopup()">OK</button>
+  </div>
 </div>
 
 <!-- JS to toggle grayscale -->
+<script src="../../../js/vendor/classicG4.js"></script>
 <script src="../../../js/vendor/grayscale-c.js"></script>
 
 </body>

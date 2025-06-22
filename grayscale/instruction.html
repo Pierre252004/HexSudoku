@@ -18,7 +18,7 @@
 
   <div class="nav-center">
     <!-- Start Dropdown -->
-    <a href="../index.html">Home</a>
+    <a href="../index-m.html">Home</a>
     <div class="dropdown">
       <a href="./game.html">Start ▾</a>
       <div class="dropdown-content">
@@ -77,11 +77,28 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='#'">Start Game</button>
-  <button class="btn" onclick="location.href='#'">Instructions</button>
-</div>
+<section class="explore-section">
+  <h2 class="section-title">Explore More</h2>
+  <div class="row-containers">
+    <div class="info-box" role="button" tabindex="0">
+      <img src="./img/strategy.png" alt="Strategy Icon" class="info-img" />
+      <h3>Gameplay Tips</h3>
+      <p>Improve your performance with easy-to-learn tricks designed for every skill level.</p>
+    </div>
+
+    <div class="info-box" role="button" tabindex="0">
+      <img src="./img/puzzle.png" alt="Puzzle Strategy Icon" class="info-img" />
+      <h3>Strategy Guide</h3>
+      <p>Master pattern logic and learn step-by-step strategies for solving complex puzzles.</p>
+    </div>
+
+    <div class="info-box" role="button" tabindex="0">
+      <img src="./img/colors.png" alt="Color Logic Icon" class="info-img" />
+      <h3>Color Logic</h3>
+      <p>Understand how hex color values replace numbers to make puzzles more dynamic.</p>
+    </div>
+  </div>
+</section>
 
 <!-- JS to toggle grayscale -->
 <script src="../js/vendor/grayscale-c.js"></script>

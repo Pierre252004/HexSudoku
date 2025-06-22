@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hex Sudoku Home</title>
+  <title>Hex Color Sudoku 9x9</title>
   <link rel="icon" type="image/png" href="../../../img/icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../../css/hexstyle-c.css">
@@ -13,7 +13,7 @@
 <div class="navbar">
   <div class="logo-container">
     <img id="logo" src="../../../img/logo.png" alt="Logo" />
-    <span><strong class="h1">Hex Sudoku</strong></span>
+    <span><strong class="h1">Hex Sudoku 9x9</strong></span>
   </div>
 
   <div class="nav-center">
@@ -27,7 +27,6 @@
           <div class="nested-dropdown-content">
             <a href="./4x4.html">4x4 Grid</a>
             <a href="./6x6.html">6x6 Grid</a>
-            <a href="./9x9.html">9x9 Grid</a>
           </div>
         </div>
         <div class="nested-dropdown">
@@ -64,26 +63,154 @@
       </div>
     </div>
   </div>
-
-  <!-- Grayscale Toggle -->
-  <div class="theme-switch">
-    <span>Grayscale</span>
-    <label class="switch">
-      <input type="checkbox" id="grayscaleToggle" onchange="toggleGrayscale()">
-
-      <span class="slider"></span>
-    </label>
-  </div>
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='#'">Start Game</button>
-  <button class="btn" onclick="location.href='#'">Instructions</button>
+<div class="sudoku-wrapper">
+  <div class="sudoku-grid grid9">
+    <!-- 4 rows x 4 columns = 16 cells -->
+    <div class="sudoku-group group9 sudoku-groupTL">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>1</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>2</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>3</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>10</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>11</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>12</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>19</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>20</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>21</div> </div>
+    </div>
+
+    <div class="sudoku-group group9 sudoku-groupT">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable contenteditable>4</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>5</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>6</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>13</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>14</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>15</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>22</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>23</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>24</div> </div>
+    </div>
+
+    <div class="sudoku-group group9 sudoku-groupTR">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>7</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>8</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>9</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>16</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>17</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>18</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>25</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>26</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>27</div> </div>
+    </div>
+
+    <div class="sudoku-group group9 sudoku-groupL">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>28</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>29</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>30</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>37</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>38</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>39</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>46</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>47</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>48</div> </div>
+    </div>
+
+    <div class="sudoku-group group9 sudoku-groupC">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>31</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>32</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>33</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>40</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>41</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>42</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>49</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>50</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>51</div> </div>
+    </div>
+
+    <div class="sudoku-group group9 sudoku-groupR">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>34</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>35</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>36</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>43</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>44</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>45</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>52</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>53</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>54</div> </div>
+    </div>
+
+    <div class="sudoku-group group9 sudoku-groupBL">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>55</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>56</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>57</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>58</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>59</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>60</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>61</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>62</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>63</div> </div>
+    </div>
+
+    <div class="sudoku-group group9 sudoku-groupB">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>64</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>65</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>70</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>71</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>72</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>73</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>74</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>75</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>76</div> </div>
+    </div>
+
+    <div class="sudoku-group group9 sudoku-groupBR">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>77</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>78</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>79</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>80</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>81</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>82</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>83</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>84</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>85</div> </div>
+    </div>
+
+  </div>
+</div>
+<div class="game-header">
+  <div class="timer" id="timer">⏱ Time: Unlimited</div>
+  <div class="number-bank">
+    <div class="bank-number b9 pink" draggable="true">#FF00FF</div>
+    <div class="bank-number b9 cyon" draggable="true">#00FFFF</div>
+    <div class="bank-number b9 yellow" draggable="true">#FFFF00</div>
+    <div class="bank-number b9 red" draggable="true">#FF0000</div>
+    <div class="bank-number b9 green" draggable="true">#00FF00</div>
+    <div class="bank-number b9 blue" draggable="true">#0000FF</div>
+    <div class="bank-number b9 light_gray" draggable="true">#BBBBBB</div>
+    <div class="bank-number b9 dark_gray" draggable="true">#444444</div>
+    <div class="bank-number b9 black" draggable="true">#000000</div>
+  </div>
+</div>
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span id="popup-message">You Win!</span>
+    <button onclick="closePopup()">OK</button>
+  </div>
 </div>
 
 <!-- JS to toggle grayscale -->
+<script src="../../../js/vendor/classicC9.js"></script>
 <script src="../../../js/vendor/grayscale-c.js"></script>
 
 </body>
