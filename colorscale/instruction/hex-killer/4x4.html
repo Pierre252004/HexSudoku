@@ -77,10 +77,29 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='#'">Start Game</button>
-  <button class="btn" onclick="location.href='#'">Instructions</button>
+<div class="container1">
+  <h1>Hex Sudoku Killer 4x4</h1>
+  <div class="mode-tag">Mode: Killer</div>
+  <div class="mode-tag">Grid: 4x4</div>
+
+  <h2>Objective</h2>
+  <p>Fill the 4×4 grid using hex color codes so that:</p>
+  <ul>
+    <li>Each row and column contains all 4 unique hex colors once.</li>
+    <li>Cages (outlined groups of cells) must add up to the given sum.</li>
+    <li>No repeating colors within a single cage.</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <ul>
+    <li>Use the cage totals to eliminate color combinations.</li>
+    <li>Start with cages that contain only one cell or very few possibilities.</li>
+    <li>Remember hex values may be represented in either color or numerical equivalents (e.g. <code>#FF0000</code> might represent 15).</li>
+  </ul>
+
+  <div class="highlight">
+    Goal: Respect both Sudoku placement rules and cage totals!
+  </div>
 </div>
 
 <!-- JS to toggle grayscale -->

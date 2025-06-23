@@ -61,12 +61,31 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='#'">Start Game</button>
-  <button class="btn" onclick="location.href='#'">Instructions</button>
-</div>
+<div class="container1">
+  <h1>Hex Sudoku Classic 9x9</h1>
+  <div class="mode-tag">Mode: Classic</div>
+  <div class="mode-tag">Grid: 9x9</div>
 
+  <h2>Objective</h2>
+  <p>Fill the 9×9 grid using the provided hex color codes so that:</p>
+  <ul>
+    <li>Each row contains all 9 unique hex colors once.</li>
+    <li>Each column contains all 9 unique hex colors once.</li>
+    <li>Each 3×3 block contains all 9 unique hex colors once.</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <ul>
+    <li>Start with the blocks that are already mostly filled.</li>
+    <li>Eliminate options by checking existing colors in rows and columns.</li>
+    <li>Use notes if needed to narrow down possibilities.</li>
+    <li>Standard hex colors include: <code>#FF0000</code>, <code>#00FF00</code>, <code>#0000FF</code>, <code>#FFFF00</code>, <code>#FF00FF</code>, <code>#00FFFF</code>, <code>#000000</code>, <code>#BBBBBB</code>, and <code>#444444</code>.</li>
+  </ul>
+
+  <div class="highlight">
+    Goal: No repeating hex color in any row, column, or block!
+  </div>
+</div>
 <!-- JS to toggle grayscale -->
 <script src="../../../js/vendor/grayscale-c.js"></script>
 

@@ -833,3 +833,30 @@ body.grayscale-mode .section-title {
   width: 100vw;       /* Full width of the viewport */
   position: absolute; /* Optional, helps full-page centering */
 }
+
+.container1 {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.mode-tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  padding: 4px 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 0.9em;
+}
+
+.highlight {
+  background-color: #ffffcc;
+  border-left: 5px solid #ffcc00;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+}

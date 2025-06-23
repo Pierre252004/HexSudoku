@@ -77,10 +77,29 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='#'">Start Game</button>
-  <button class="btn" onclick="location.href='#'">Instructions</button>
+<div class="container1">
+  <h1>Hex Sudoku Killer 6x6</h1>
+  <div class="mode-tag">Mode: Killer</div>
+  <div class="mode-tag">Grid: 6x6</div>
+
+  <h2>Objective</h2>
+  <p>Fill the 6×6 grid using hex color codes so that:</p>
+  <ul>
+    <li>Each row and column contains all 6 unique hex colors once.</li>
+    <li>Each 2×3 or 3×2 block (depending on layout) also contains all 6 hex colors once.</li>
+    <li>Cages must add up to the target total without repeating any hex color within them.</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <ul>
+    <li>Focus on cages with only one cell first—they directly reveal the required value.</li>
+    <li>Use hex-to-decimal conversion when calculating sums.</li>
+    <li>Try to isolate cages that conflict with rows/columns and eliminate impossible placements.</li>
+  </ul>
+
+  <div class="highlight">
+    Combine math logic with Sudoku rules to conquer the challenge!
+  </div>
 </div>
 
 <!-- JS to toggle grayscale -->

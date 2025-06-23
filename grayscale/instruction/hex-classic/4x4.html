@@ -61,10 +61,29 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='hex-9x9.html'">Start Game</button>
-  <button class="btn" onclick="location.href='instructions-hex-9x9.html'">Instructions</button>
+<div class="container1">
+  <h1>Hex Sudoku Classic 4x4</h1>
+  <div class="mode-tag">Mode: Classic</div>
+  <div class="mode-tag">Grid: 4x4</div>
+
+  <h2>Objective</h2>
+  <p>Fill the grid with the provided hex color codes so that:</p>
+  <ul>
+    <li>Each row contains all 4 unique hex colors once.</li>
+    <li>Each column contains all 4 unique hex colors once.</li>
+    <li>Each 2×2 block contains all 4 unique hex colors once.</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <ul>
+    <li>Start with blocks that have fewer missing values.</li>
+    <li>Use logic and visual scanning to eliminate impossible options.</li>
+    <li>Hex colors used may include: <code>#FF0000</code>, <code>#00FF00</code>, <code>#0000FF</code>, etc.</li>
+  </ul>
+
+  <div class="highlight">
+    Remember: No repeating colors in rows, columns, or blocks!
+  </div>
 </div>
 
 <!-- JS to toggle grayscale -->
