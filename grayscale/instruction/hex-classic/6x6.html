@@ -61,10 +61,29 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" onclick="location.href='#'">Start Game</button>
-  <button class="btn" onclick="location.href='#'">Instructions</button>
+<div class="container1">
+  <h1>Hex Sudoku Classic 6x6</h1>
+  <div class="mode-tag">Mode: Classic</div>
+  <div class="mode-tag">Grid: 6x6</div>
+
+  <h2>Objective</h2>
+  <p>Fill the 6×6 grid using the provided hex color codes so that:</p>
+  <ul>
+    <li>Each row contains all 6 unique hex colors once.</li>
+    <li>Each column contains all 6 unique hex colors once.</li>
+    <li>Each 2×3 or 3×2 block contains all 6 unique hex colors once (depending on layout).</li>
+  </ul>
+
+  <h2>Tips</h2>
+  <ul>
+    <li>Use logic to eliminate duplicate hex colors in rows and columns.</li>
+    <li>Start with blocks or rows that are mostly filled.</li>
+    <li>Common hex codes used: <code>#FF0000</code>, <code>#00FF00</code>, <code>#0000FF</code>, <code>#FFFF00</code>, <code>#FF00FF</code>, <code>#00FFFF</code>.</li>
+  </ul>
+
+  <div class="highlight">
+    Goal: No color should repeat in any row, column, or block.
+  </div>
 </div>
 
 <!-- JS to toggle grayscale -->
