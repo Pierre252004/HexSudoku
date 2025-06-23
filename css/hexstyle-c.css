@@ -528,6 +528,18 @@ body.grayscale-mode .section-title {
   height: 50px;
   font-size: x-small !important;
 }
+.sK6{
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  font-size: xx-small !important;
+}
+.sK9{
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 6px !important;
+}
 .s9{
   font-size: 6px;
   line-height: 40px;
@@ -648,6 +660,52 @@ body.grayscale-mode .section-title {
 .hex-bottom{
   margin: 52px -40px 10px 15px;
 }
+.hex-left6{
+  transform: rotate(270deg);
+  transform-origin: bottom;
+  margin-top: 15px;
+  margin-right: -13px;
+  margin-left: -13px;
+}
+.hex-right6{
+  transform: rotate(270deg);
+  transform-origin: bottom;
+  margin-top: 20px;
+  margin-right: -64px;
+  margin-left: 38px;
+
+}
+.hex-top6{
+  margin-top:-7px;
+  margin-right:-32px;
+  margin-left: 10px;
+}
+.hex-bottom6{
+  margin: 40px -40px 10px 15px;
+}
+.hex-left9{
+  transform: rotate(270deg);
+  transform-origin: bottom;
+  margin-top: 10px;
+  margin-right: -13px;
+  margin-left: -13px;
+}
+.hex-right9{
+  transform: rotate(270deg);
+  transform-origin: bottom;
+  margin-top: 10px;
+  margin-right: -49px;
+  margin-left: 26px;
+
+}
+.hex-top9{
+  margin-top:-7px;
+  margin-right:-32px;
+  margin-left: 10px;
+}
+.hex-bottom9{
+  margin: 32px -30px 35px 10px;
+}
 .hex-null{
   height: 0 !important;
   width: 0;
@@ -655,6 +713,8 @@ body.grayscale-mode .section-title {
 .hex-value:hover{
   transform: scale(1.4);
   font-size: 8px;
+  justify-content: center;
+  height: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 11;
 }
