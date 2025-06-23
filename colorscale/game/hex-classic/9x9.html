@@ -172,6 +172,44 @@
       <div class="#"> <div class="sudoku-cell s9" contenteditable>75</div> </div>
       <div class="#"> <div class="sudoku-cell s9" contenteditable>76</div> </div>
     </div>
+    <div class="sudoku-group group9 sudoku-groupBR">
+      <!-- class=" surounding # " -->
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>64</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>65</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>70</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>71</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>72</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>73</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>74</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>75</div> </div>
+      <div class="#"> <div class="sudoku-cell s9" contenteditable>76</div> </div>
+    </div>
+  </div>
+</div>
+
+<div class="game-header">
+  <div class="timer" id="timer">⏱ Time: Unlimited</div>
+  <div class="number-bank">
+    <div class="bank-number b9 pink" draggable="true">#FF00FF</div>
+    <div class="bank-number b9 cyon" draggable="true">#00FFFF</div>
+    <div class="bank-number b9 yellow" draggable="true">#FFFF00</div>
+    <div class="bank-number b9 red" draggable="true">#FF0000</div>
+    <div class="bank-number b9 green" draggable="true">#00FF00</div>
+    <div class="bank-number b9 blue" draggable="true">#0000FF</div>
+    <div class="bank-number b9 light_gray" draggable="true">#BBBBBB</div>
+    <div class="bank-number b9 dark_gray" draggable="true">#444444</div>
+    <div class="bank-number b9 black" draggable="true">#000000</div>
+  </div>
+</div>
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span id="popup-message">You Win!</span>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<!-- JS to toggle grayscale -->
+<script src="../../../js/vendor/colored/classicC9.js"></script>
 <script src="../../../js/vendor/grayscale-c.js"></script>
 
 </body>

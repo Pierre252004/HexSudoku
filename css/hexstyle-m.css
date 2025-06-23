@@ -660,3 +660,151 @@ body.grayscale-mode .section-title {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 11;
 }
+.info-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.rules-container {
+  background-color: var(--bg-light, #f5f5f5);
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin: 20px auto;
+  max-width: 700px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.rules-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: var(--primary, #333);
+  text-align: left;
+}
+
+.rules-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rules-list li {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.rules-list li strong {
+  color: var(--primary, #222);
+  margin-right: 8px;
+}
+.rules-container {
+  background-color: -moz-default-color;
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin: 20px auto;
+  max-width: 700px;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.rules-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: -moz-default-color;
+  text-align: left;
+}
+
+.rules-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rules-list li {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.rules-list li strong {
+  color: -moz-default-color;
+  margin-right: 8px;
+}
+.switch-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.switch-label {
+  font-weight: bold;
+}
+
+.switch1 {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.switch1 input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider1 {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  color: black;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slider1 span {
+  z-index: 2;
+  flex: 1;
+  text-align: center;
+}
+
+.slider1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  border-radius: 34px;
+  transition: 0.4s;
+  z-index: 0;
+}
+
+.switch1 input:checked + .slider1::before {
+  transform: translateX(100%);
+}
+
+input:checked + .slider {
+  background-color: #F3F3F3;
+}
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;       /* Full width of the viewport */
+  position: absolute; /* Optional, helps full-page centering */
+}

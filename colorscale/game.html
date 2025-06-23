@@ -77,13 +77,96 @@
 </div>
 
 <!-- MAIN CONTENT -->
-<div class="container">
-  <h1>Welcome to Hex Sudoku</h1>
-  <button class="btn" contenteditable="location.href='#'">Start Game</button>
-  <button class="btn" contenteditable="location.href='#'">Instructions</button>
-</div>
+<section class="explore-section">
+  <div class="center-wrapper">
+    <label class="switch1">
+      <input type="checkbox" id="modeToggle" onchange="toggleGameMode()" />
+      <span class="slider1">
+      <span>Classic</span>
+      <span>Killer</span>
+    </span>
+    </label>
+  </div>
+  <section id="classic">
+    <h2 class="section-title">Classic Options:</h2>
+    <div class="row-containers">
+      <a href="./game/hex-classic/4x4.html" class="info-link">
+        <div class="info-box" role="button" tabindex="0">
+          <img src="../img/4x4.png" alt="4x4" class="info-img" />
+          <h3>The Classic 4x4</h3>
+          <p>You will have 4 lives for this game.</p>
+        </div>
+      </a>
+
+      <a href="./game/hex-classic/6x6.html" class="info-link">
+        <div class="info-box" role="button" tabindex="0">
+          <img src="../img/6x6.png" alt="6x6" class="info-img" />
+          <h3>The Classic 6x6</h3>
+          <p>You will have 6 lives for this game.</p>
+        </div>
+      </a>
+
+      <a href="./game/hex-classic/9x9.html" class="info-link">
+        <div class="info-box" role="button" tabindex="0">
+          <img src="../img/9x9.png" alt="9x9" class="info-img" />
+          <h3>The Classic 9x9</h3>
+          <p>You will have 9 lives for this game.</p>
+        </div>
+      </a>
+    </div>
+    <div class="rules-container">
+      <h2 class="rules-title">Game Rule</h2>
+      <ul class="rules-list">
+        <li><strong>•</strong> You must place each hex color exactly once in every row, column, and region.</li>
+        <li><strong>•</strong> You will have a certain amount of lives which provided under each info-block.</li>
+        <li><strong>•</strong> Once you entre you get a description and an alert to add any time if wanted.</li>
+        <li><strong>•</strong> If Timer or lives end, you will lose.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="killer" style="display: none;">
+    <h2 class="section-title">Killer Options:</h2>
+    <div class="row-containers">
+      <a href="./game/hex-classic/4x4.html" class="info-link">
+        <div class="info-box" role="button" tabindex="0">
+          <img src="../img/4x4.png" alt="4x4" class="info-img" />
+          <h3>The Killer 4x4</h3>
+          <p>You have 4 lives for the game.</p>
+        </div>
+      </a>
+
+      <a href="./game/hex-classic/6x6.html" class="info-link">
+        <div class="info-box" role="button" tabindex="0">
+          <img src="../img/6x6.png" alt="6x6" class="info-img" />
+          <h3>The Killer 6x6</h3>
+          <p>You have 6 lives for the game.</p>
+        </div>
+      </a>
+
+      <a href="./game/hex-classic/9x9.html" class="info-link">
+        <div class="info-box" role="button" tabindex="0">
+          <img src="../img/9x9.png" alt="9x9" class="info-img" />
+          <h3>The Killer 9x9</h3>
+          <p>You have 9 lives for the game.</p>
+        </div>
+      </a>
+    </div>
+    <div class="rules-container">
+      <h2 class="rules-title">Game Rule</h2>
+      <ul class="rules-list">
+        <li><strong>•</strong> You must place each hex color exactly once in every row, column, and region.</li>
+        <li><strong>•</strong> You will have a certain amount of lives which provided under each info-block.</li>
+        <li><strong>•</strong> Once you entre you get a description and an alert to add any time if wanted.</li>
+        <li><strong>•</strong> If Timer or lives end, you will lose.</li>
+        <li><strong>•</strong> All dashed line contain the amount of element to be added together.</li>
+        <li><strong>•</strong> All dashed line contain a number that contain the result of the addition.</li>
+      </ul>
+    </div>
+  </section>
+</section>
 
 <!-- JS to toggle grayscale -->
+<script src="../js/vendor/game.js"></script>
 <script src="../js/vendor/grayscale-c.js"></script>
 
 </body>
